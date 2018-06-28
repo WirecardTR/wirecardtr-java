@@ -43,7 +43,7 @@ Servis Adı        	        | Servis Tipi   	      | Adres 	|
 ------------------	        |----------------       |-----	|
  SMS ile Ödeme Servisleri 	| SOAP 	                | https://www.wirecard.com.tr/services/saleservice.asmx	|
  SMS ile Abonelik Servisleri| SOAP                  | https://www.wirecard.com.tr/services/SubscriberManagementService.asmx
- Bilgi SMS Servisleri       | SOAP                  | http://vas.mikro-odeme.com/services/msendsmsservice.asmx <br>  http://vas.mikroodeme.com/services/MCustomSendSMSService.asmx
+ Bilgi SMS Servisleri       | SOAP                  | https://www.wirecard.com.tr/vas/msendsmsservice.asmx <br>  https://www.wirecard.com.tr/vas/MCustomSendSMSService.asmx
  Kredi Kartı ile Ödeme Servisler |REST              | https://www.wirecard.com.tr/SGate/Gate
  Marketplace (Pazaryeri) ile Ödeme Servisleri | REST | https://www.wirecard.com.tr/SGate/Gate
                                                      
