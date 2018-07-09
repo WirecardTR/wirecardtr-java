@@ -12,7 +12,7 @@
     <div class="form-group">
         <div class="row">
 
-            <label class="col-md-12 control-label" for="">Mpay</label>
+            <label class="col-md-12 control-label" for="">Sipariş Numarası</label>
             <div class="col-md-3">
                 <input name="orderId" type="text" value=""  class="form-control" required="">
             </div>
@@ -39,8 +39,8 @@
                            Input ve token bilgileri doldurularak otomatik service çağrısı başlatılır.
                    */    
                  Settings settings = new Settings();
-		 settings.userCode="20923";
-                 settings.pin="535D7D1B5DA6407EB7F6";  
+		 settings.userCode="";
+                 settings.pin="";  
                  
                   com._3pay.services.SaleService service = new com._3pay.services.SaleService();
                   com._3pay.services.SaleServiceSoap port = service.getSaleServiceSoap12();

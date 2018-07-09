@@ -31,6 +31,8 @@
                                 <prop key="pro_api.htm">ProApiController</prop>	
                                  <prop key="api_plus.htm">ApiPlusController</prop>	
                                 <prop key="ccproxy_sale.htm">CCProxySaleController</prop>
+                                <prop key="marketplace_wdticketmpsale3dseure.htm">MarketPlaceWDTicketSale3DSecureController</prop>
+                                <prop key="subscriber_change_price.htm">ChangeSubscriberPriceController</prop>
                                 <prop key="ccroxy_sale3d.htm">CCProxySale3DSecureController</prop>
                                 <prop key="wdticket_sale3durl.htm">WDTicketSale3DSecureController</prop>	
                                 <prop key="wdticket_sale.htm">WDTicketSaleController</prop>	
@@ -42,6 +44,10 @@
                                 <prop key="transactionquery_mpay.htm">TransactionQueryMPAYController</prop>
                                 <prop key="success.htm">SuccessController</prop>
                                 <prop key="fail.htm">FailController</prop>
+                                <prop key="tokenize_ccurl.htm">TokenizeCCURLController</prop>
+                                <prop key="tokenizecc.htm">TokenizeCCController</prop>
+                                <prop key="tokenizesuccess.htm">TokenizeSuccessController</prop>
+                                <prop key="tokenizeerror.htm">TokenizeErrorController</prop>
                                 
 			</props>
 		</property>
@@ -82,6 +88,13 @@
 		name="MarketPlaceReleaseController"
 		class="org.springframework.web.servlet.mvc.ParameterizableViewController"
 		p:viewName="marketplace_release_payment" />
+         <bean
+		name="MarketPlaceWDTicketSale3DSecureController"
+		class="org.springframework.web.servlet.mvc.ParameterizableViewController"
+		p:viewName="marketplace_wdticketmpsale3dseure" />
+        
+        
+        
         <bean
 		name="MarketPlaceDeactiveController"
 		class="org.springframework.web.servlet.mvc.ParameterizableViewController"
@@ -119,6 +132,10 @@
 		name="SubscriberSelectController"
 		class="org.springframework.web.servlet.mvc.ParameterizableViewController"
 		p:viewName="subscriber_select" />
+           <bean
+		name="ChangeSubscriberPriceController"
+		class="org.springframework.web.servlet.mvc.ParameterizableViewController"
+		p:viewName="subscriber_change_price" />
               <bean
 		name="ApiPlusController"
 		class="org.springframework.web.servlet.mvc.ParameterizableViewController"
@@ -135,11 +152,28 @@
 		name="SuccessController"
 		class="org.springframework.web.servlet.mvc.ParameterizableViewController"
 		p:viewName="success" /> 
-         <bean
+               <bean
 		name="FailController"
 		class="org.springframework.web.servlet.mvc.ParameterizableViewController"
 		p:viewName="fail" /> 
-         
+             
+               <bean
+		name="TokenizeSuccessController"
+		class="org.springframework.web.servlet.mvc.ParameterizableViewController"
+		p:viewName="tokenizesuccess" /> 
+         <bean
+		name="TokenizeErrorController"
+		class="org.springframework.web.servlet.mvc.ParameterizableViewController"
+		p:viewName="tokenizeerror" /> 
+          <bean
+		name="TokenizeCCURLController"
+		class="org.springframework.web.servlet.mvc.ParameterizableViewController"
+		p:viewName="tokenize_ccurl" /> 
+           <bean
+		name="TokenizeCCController"
+		class="org.springframework.web.servlet.mvc.ParameterizableViewController"
+		p:viewName="tokenizecc" /> 
+          
          
          
          

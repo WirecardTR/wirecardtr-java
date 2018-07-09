@@ -62,6 +62,18 @@
                 <input name="mobilePhoneNumber" class="form-control input-md">
             </div>
         </div>
+         <div class="form-group">
+            <label class="col-md-4 control-label" for="">Maðazaya veya maðaza yetkilisine ait email adresi</label>
+            <div class="col-md-4">
+                <input name="emailAddress" class="form-control input-md">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="">Fatura email adresi</label>
+            <div class="col-md-4">
+                <input name="invoiceEmailAddress" class="form-control input-md">
+            </div>
+        </div>
         <div class="form-group">
             <label class="col-md-4 control-label" for="">Maðaza sahibine veya yetkilisine ait TC kimlik numarasý</label>
             <div class="col-md-4">
@@ -104,6 +116,7 @@
                 marketPlaceAddSubMerchantRequest.UniqueId = "123456";
                 marketPlaceAddSubMerchantRequest.SubPartnerType=request.getParameter("subPartnerType");
                 marketPlaceAddSubMerchantRequest.Name=request.getParameter("name");
+                marketPlaceAddSubMerchantRequest.BranchName=request.getParameter("name");
                 
                 
                 marketPlaceAddSubMerchantRequest.Token= new Token();
@@ -117,6 +130,9 @@
                 marketPlaceAddSubMerchantRequest.ContactInfo.Address = "Gayrettepe Mh. Yýldýz Posta Cd. D Plaza No:52 K:6 34349 Beþiktaþ / Ýstanbul";
                 marketPlaceAddSubMerchantRequest.ContactInfo.MobilePhone =request.getParameter("mobilePhoneNumber");
                 marketPlaceAddSubMerchantRequest.ContactInfo.BusinessPhone = "2121111111";
+                marketPlaceAddSubMerchantRequest.ContactInfo.Email =request.getParameter("emailAddress");
+                marketPlaceAddSubMerchantRequest.ContactInfo.InvoiceEmail =request.getParameter("invoiceEmailAddress");
+                
                 
                 marketPlaceAddSubMerchantRequest.FinancialInfo = new FinancialInfo();
                 marketPlaceAddSubMerchantRequest.FinancialInfo.IdentityNumber =request.getParameter("identityNumber");
@@ -124,7 +140,6 @@
                 marketPlaceAddSubMerchantRequest.FinancialInfo.TaxNumber = "11111111111";
                 marketPlaceAddSubMerchantRequest.FinancialInfo.BankName = "0012";
                 marketPlaceAddSubMerchantRequest.FinancialInfo.IBAN = "TR330006100519786457841326";
-                marketPlaceAddSubMerchantRequest.FinancialInfo.AccountName = "Ahmet Yýlmaz";
                 
 		String marketPlaceAddSubMerchantResponse = marketPlaceAddSubMerchantRequest.execute(marketPlaceAddSubMerchantRequest,settings); //"Pazaryeri Oluþturma servisi baþlatýlmasý için gerekli servis çaðýrýsýný temsil eder."
 		StringWriter sw = new StringWriter();

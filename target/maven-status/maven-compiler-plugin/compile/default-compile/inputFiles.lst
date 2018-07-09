@@ -34,6 +34,7 @@ D:\wirecardgithub\wirecardtr-java\target\generated-sources\jaxws-wsimport\com\_3
 D:\wirecardgithub\wirecardtr-java\target\generated-sources\jaxws-wsimport\com\mikro_odeme\services\CreditCardProxyInput.java
 D:\wirecardgithub\wirecardtr-java\src\wirecard\core\entity\CreditCardInfo.java
 D:\wirecardgithub\wirecardtr-java\target\generated-sources\jaxws-wsimport\com\_3pay\services\GetSaleResultMPAY.java
+D:\wirecardgithub\wirecardtr-java\src\wirecard\core\request\SubScriberChangePriceRequest.java
 D:\wirecardgithub\wirecardtr-java\src\wirecard\core\entity\ContactInfo.java
 D:\wirecardgithub\wirecardtr-java\target\generated-sources\jaxws-wsimport\com\_3pay\services\MSaleInput.java
 D:\wirecardgithub\wirecardtr-java\target\generated-sources\jaxws-wsimport\com\_3pay\services\MSaleTicketInput.java
@@ -45,6 +46,7 @@ D:\wirecardgithub\wirecardtr-java\target\generated-sources\jaxws-wsimport\com\_3
 D:\wirecardgithub\wirecardtr-java\target\generated-sources\jaxws-wsimport\com\_3pay\services\TicketOutput.java
 D:\wirecardgithub\wirecardtr-java\target\generated-sources\jaxws-wsimport\com\_3pay\services\SelectSubscriberDetailResponse.java
 D:\wirecardgithub\wirecardtr-java\src\wirecard\core\entity\Token.java
+D:\wirecardgithub\wirecardtr-java\src\wirecard\core\TokenizeSuccesOrFailResponse.java
 D:\wirecardgithub\wirecardtr-java\target\generated-sources\jaxws-wsimport\com\_3pay\services\SelectSubscriber.java
 D:\wirecardgithub\wirecardtr-java\target\generated-sources\jaxws-wsimport\com\mikro_odeme\services\MAuthToken.java
 D:\wirecardgithub\wirecardtr-java\src\wirecard\core\request\MarketPlaceMpSaleRequest.java
@@ -64,6 +66,7 @@ D:\wirecardgithub\wirecardtr-java\target\generated-sources\jaxws-wsimport\com\_3
 D:\wirecardgithub\wirecardtr-java\target\generated-sources\jaxws-wsimport\com\_3pay\services\MSubscriberDetail.java
 D:\wirecardgithub\wirecardtr-java\target\generated-sources\jaxws-wsimport\com\_3pay\services\GetBokuPricePointsResponse.java
 D:\wirecardgithub\wirecardtr-java\target\generated-sources\jaxws-wsimport\com\_3pay\services\MSaleProduct.java
+D:\wirecardgithub\wirecardtr-java\src\wirecard\core\request\TokenizeCCURLRequest.java
 D:\wirecardgithub\wirecardtr-java\src\wirecard\core\request\MarketPlaceUpdateSubMerchantRequest.java
 D:\wirecardgithub\wirecardtr-java\target\generated-sources\jaxws-wsimport\com\_3pay\services\MMicroPaymentOutput.java
 D:\wirecardgithub\wirecardtr-java\target\generated-sources\jaxws-wsimport\com\_3pay\services\DeactivateSubscriberResponse.java
@@ -74,6 +77,7 @@ D:\wirecardgithub\wirecardtr-java\target\generated-sources\jaxws-wsimport\com\_3
 D:\wirecardgithub\wirecardtr-java\target\generated-sources\jaxws-wsimport\com\_3pay\services\SaleWithoutConfirmTestResponse.java
 D:\wirecardgithub\wirecardtr-java\target\generated-sources\jaxws-wsimport\com\_3pay\services\MSaleResult.java
 D:\wirecardgithub\wirecardtr-java\target\generated-sources\jaxws-wsimport\com\_3pay\services\GetBokuPricePoints.java
+D:\wirecardgithub\wirecardtr-java\src\wirecard\core\request\TokenizeCCRequest.java
 D:\wirecardgithub\wirecardtr-java\target\generated-sources\jaxws-wsimport\com\_3pay\services\GetSaleResult2.java
 D:\wirecardgithub\wirecardtr-java\src\wirecard\core\request\MarketplaceReleasePaymentRequest.java
 D:\wirecardgithub\wirecardtr-java\target\generated-sources\jaxws-wsimport\com\_3pay\services\MSubscriber.java
@@ -87,6 +91,7 @@ D:\wirecardgithub\wirecardtr-java\target\generated-sources\jaxws-wsimport\com\_3
 D:\wirecardgithub\wirecardtr-java\target\generated-sources\jaxws-wsimport\com\_3pay\services\MSubscriberDetailOutput.java
 D:\wirecardgithub\wirecardtr-java\src\wirecard\core\entity\FinancialInfo.java
 D:\wirecardgithub\wirecardtr-java\target\generated-sources\jaxws-wsimport\com\_3pay\services\DeleteSubscriberResponse.java
+D:\wirecardgithub\wirecardtr-java\src\wirecard\core\SuccessOrFailResponse.java
 D:\wirecardgithub\wirecardtr-java\target\generated-sources\jaxws-wsimport\com\mikro_odeme\services\MSendSMSInput.java
 D:\wirecardgithub\wirecardtr-java\target\generated-sources\jaxws-wsimport\com\_3pay\services\CreditCardProxy.java
 D:\wirecardgithub\wirecardtr-java\target\generated-sources\jaxws-wsimport\com\_3pay\services\CheckTicket.java
@@ -113,4 +118,5 @@ D:\wirecardgithub\wirecardtr-java\target\generated-sources\jaxws-wsimport\com\_3
 D:\wirecardgithub\wirecardtr-java\src\wirecard\core\RestHttpCaller.java
 D:\wirecardgithub\wirecardtr-java\target\generated-sources\jaxws-wsimport\com\_3pay\services\ResumeSaleWithOtpResponse.java
 D:\wirecardgithub\wirecardtr-java\target\generated-sources\jaxws-wsimport\com\_3pay\services\SubscriberManagementServiceSoap.java
+D:\wirecardgithub\wirecardtr-java\src\wirecard\core\request\MarketPlaceWDTicketMpSale3dSecureRequest.java
 D:\wirecardgithub\wirecardtr-java\target\generated-sources\jaxws-wsimport\com\_3pay\services\UpdateSubscriberPriceByIdandDate.java

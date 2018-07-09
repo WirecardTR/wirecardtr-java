@@ -34,6 +34,8 @@ com\_3pay\services\SubscriberManagementServiceSoap.class
 com\_3pay\services\QueryResultItem.class
 com\mikro_odeme\services\MSendSMSOutput.class
 com\_3pay\services\GetSaleResult2Response.class
+wirecard\core\request\SubScriberChangePriceRequest.class
+wirecard\core\request\TokenizeCCURLRequest.class
 com\_3pay\services\ArrayOfMSubscriberPayment.class
 com\_3pay\services\package-info.class
 com\_3pay\services\GetSaleResultResponse.class
@@ -62,7 +64,9 @@ com\_3pay\services\SaleWithoutConfirmTestResponse.class
 com\_3pay\services\CreditCardProxy.class
 com\_3pay\services\ResumeSaleWithOtp.class
 wirecard\core\request\CCProxySale3DRequest.class
+wirecard\core\request\TokenizeCCRequest.class
 com\mikro_odeme\services\CreditCardProxyInput.class
+wirecard\core\request\MarketPlaceWDTicketMpSale3dSecureRequest.class
 com\_3pay\services\SaleWithoutConfirm.class
 com\_3pay\services\SaleWithoutConfirmTest.class
 com\_3pay\services\SaleWithoutConfirmResponse.class
@@ -107,6 +111,7 @@ wirecard\core\RestHttpCaller.class
 wirecard\core\entity\CardTokenization.class
 com\_3pay\services\SaleServiceSoap.class
 com\_3pay\services\MSaleTicketInputExtended.class
+wirecard\core\SuccessOrFailResponse.class
 com\_3pay\services\MSubscriberDetailOutput.class
 com\_3pay\services\MSaleTicketOutput.class
 com\_3pay\services\CreditCardProxyResponse.class
@@ -116,5 +121,6 @@ com\_3pay\services\MTokenSaleInput.class
 com\_3pay\services\StartSaleWithOtpResponse.class
 com\_3pay\services\SelectSubscriberDetailResponse.class
 com\mikro_odeme\services\SendSMSResponse.class
+wirecard\core\TokenizeSuccesOrFailResponse.class
 wirecard\core\entity\Token.class
 wirecard\core\Constants$HTTPMethods.class

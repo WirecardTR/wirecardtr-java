@@ -17,5 +17,8 @@ import javax.xml.bind.annotation.XmlElement;
         public String BusinessPhone ;
         @XmlElement(name = "MobilePhone")
         public String MobilePhone;
-     
+        @XmlElement(name = "Email")
+        public String Email;
+        @XmlElement(name = "InvoiceEmail")
+        public String InvoiceEmail;
 }

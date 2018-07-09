@@ -28,6 +28,8 @@ public class MarketPlaceAddSubMerchantRequest {
         public String SubPartnerType;
         @XmlElement(name ="Name")
         public String Name ;
+        @XmlElement(name ="BranchName")
+        public String BranchName ;
         @XmlElement(name ="ContactInfo")
         public ContactInfo ContactInfo;
         @XmlElement(name ="FinancialInfo")

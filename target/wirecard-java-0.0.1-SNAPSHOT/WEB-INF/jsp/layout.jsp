@@ -54,6 +54,7 @@
                       <li><a href="subscriber_select.htm">Abonelik Listele</a></li>
                       <li><a href="subscriber_detail.htm">Abonelik Detay</a></li>
                       <li><a href="subscriber_deactive.htm">Abonelik İptal Etme</a></li>
+                       <li><a href="subscriber_change_price.htm">Abonelik Ücretini Güncelleme</a></li>
                        
                     </ul>
                 </li>
@@ -81,7 +82,16 @@
                       <li><a href="marketplace_deactive_subpartner.htm">Mağaza Sil</a></li>
                       <li><a href="marketplace_sale_3dsecure.htm">3D Secure ile Ödeme</a></li>
                       <li><a href="marketplace_mpsale.htm">3D Secure Olmadan Ödeme</a></li>
+                      <li><a href="marketplace_wdticketmpsale3dseure.htm">Wirecard ortak ödeme sayfası</a></li>
                       <li><a href="marketplace_release_payment.htm">Ödeme Onay Servisi</a></li>
+                    </ul>
+                </li>
+                <li>
+                     <a href="#ccTokenize" data-toggle="collapse" aria-expanded="false">Kart Saklama</a>
+                    <ul class="collapse list-unstyled" id="ccTokenize">
+                      <li><a href="tokenize_ccurl.htm">Url Yöntemi ile kart saklama</a></li>
+                       <li><a href="tokenizecc.htm">Direk Kart Sakla</a></li>
+                       
                     </ul>
                 </li>
                  <li>
