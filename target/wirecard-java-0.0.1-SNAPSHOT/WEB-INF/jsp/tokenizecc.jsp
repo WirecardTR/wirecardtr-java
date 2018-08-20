@@ -81,8 +81,8 @@
                
 		Settings settings = new Settings();
                 
-		settings.userCode="20923";
-                settings.pin="535D7D1B5DA6407EB7F6";
+		settings.userCode="";
+                settings.pin="";
 		settings.baseUrl = "https://www.wirecard.com.tr/SGate/Gate"; //"Wirecard web servisleri API url'lerinin bilgisidir. 
    
 		TokenizeCCRequest tokenizeCcUrl = new TokenizeCCRequest();  
@@ -102,10 +102,10 @@
                 tokenizeCcUrl.Token.UserCode = settings.userCode;
                 tokenizeCcUrl.Token.Pin = settings.pin;
                 
-                String tokenizeCcUrlResponse = tokenizeCcUrl.execute(tokenizeCcUrl,settings); //"Url yöntemi ile kart saklama servisi başlatılması için gerekli servis çağırısını temsil eder."
+                String tokenizeCcUrlResponse = tokenizeCcUrl.execute(tokenizeCcUrl,settings); //"Direk Kart Saklama yöntemi ile kart saklama servisi başlatılması için gerekli servis çağırısını temsil eder."
 		StringWriter sw = new StringWriter();
                 JAXB.marshal(tokenizeCcUrlResponse, sw);
-		out.println("<pre>" + Helper.prettyPrintXml(sw.toString()) + "</pre>"); //"Url yöntemi ile kart saklama servis çağrısı sonucunda oluşan servis çıktı parametrelerinin ekranda gösterilmesini sağlar"
+		out.println("<pre>" + Helper.prettyPrintXml(sw.toString()) + "</pre>"); //"Direk Kart Saklama yöntemi servis çağrısı sonucunda oluşan servis çıktı parametrelerinin ekranda gösterilmesini sağlar"
 	}
 %>
 <jsp:include page="footer.jsp" />

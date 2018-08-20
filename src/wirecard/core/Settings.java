@@ -5,9 +5,10 @@ package wirecard.core;
 */
 
 public class Settings {
-	public String userCode;
+	public String userCode ;
 	public String pin;
 	public String baseUrl;
+        public String hashKey;
 
 
 }

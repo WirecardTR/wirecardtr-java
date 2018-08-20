@@ -95,8 +95,8 @@
 		*/
                 UUID  uuid = UUID.randomUUID();
 		Settings settings = new Settings();    
-		settings.userCode="";
-                settings.pin="";
+		settings.userCode="20923";
+                settings.pin="535D7D1B5DA6407EB7F6";
 		settings.baseUrl = "https://www.wirecard.com.tr/SGate/Gate"; //"Wirecard web servisleri API url'lerinin bilgisidir. 
 
                 
@@ -110,7 +110,7 @@
                 ccProxySale3dRequest.InstallmentCount =Integer.parseInt(request.getParameter("installmentCount"));
                 ccProxySale3dRequest.ExtraParam = "";
                 ccProxySale3dRequest.Port = "123";
-                ccProxySale3dRequest.ErrorURL = "http://localhost:8084/wirecard-java/error.htm";
+                ccProxySale3dRequest.ErrorURL = "http://localhost:8084/wirecard-java/fail.htm";
                 ccProxySale3dRequest.SuccessURL = "http://localhost:8084/wirecard-java/success.htm";
                 ccProxySale3dRequest.Token = new Token();
                 ccProxySale3dRequest.Token.UserCode = settings.userCode;
@@ -128,7 +128,7 @@
                 ccProxySale3dRequest.CardTokenization.RequestType=0;
                 ccProxySale3dRequest.CardTokenization.CustomerId="01";
                 ccProxySale3dRequest.CardTokenization.ValidityPeriod=0;
-                ccProxySale3dRequest.CardTokenization.CCTokenId=uuid.toString();
+                ccProxySale3dRequest.CardTokenization.CCTokenId="";
 		String ccProxySale3dResponse = ccProxySale3dRequest.execute(ccProxySale3dRequest,settings); //"Ödeme Formu ödeme servisi baþlatýlmasý için gerekli servis çaðýrýsýný temsil eder."
 		StringWriter sw = new StringWriter();
                 JAXB.marshal(ccProxySale3dResponse, sw);
