@@ -33,6 +33,16 @@
                 <input value="" name="subPartnerId" class="form-control input-md">
             </div>
         </div>
+         <div class="form-group">
+            <label class="col-md-4 control-label" for="">  Para Birimi: </label>
+            <div class="col-md-4">
+                <select name="currencyCode">
+                    <option value="TRY">TRY</option>
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                </select>
+            </div>
+        </div>
        
     </fieldset>
     <!-- Button -->
@@ -65,6 +75,7 @@
                 marketPlaceSale3DSecRequest.ServiceType = "WDTicket";
                 marketPlaceSale3DSecRequest.OperationType = "MPSale3DSECWithUrl";
                 marketPlaceSale3DSecRequest.MPAY = "";
+                marketPlaceSale3DSecRequest.CurrencyCode =request.getParameter("currencyCode");
                 marketPlaceSale3DSecRequest.Description = "Bilgisayar";
                 marketPlaceSale3DSecRequest.CommissionRate = 100; //komisyon oraný 1. 100 ile çarpýlýp gönderiliyor
                 marketPlaceSale3DSecRequest.Price = 1; //komisyon oraný 1. 100 ile çarpýlýp gönderiliyor

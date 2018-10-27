@@ -33,6 +33,8 @@ public class MarketPlaceSale3DSecRequest {
         public CardTokenization CardTokenization ;
         @XmlElement(name ="MPAY")
         public String MPAY ;
+        @XmlElement(name ="CurrencyCode")
+        public String CurrencyCode ;
         @XmlElement(name ="IPAddress")
         public String IPAddress ;
         @XmlElement(name ="Port")

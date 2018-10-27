@@ -30,27 +30,19 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link MSaleOutput }
-     * 
-     */
-    public MSaleOutput createMSaleOutput() {
-        return new MSaleOutput();
-    }
-
-    /**
-     * Create an instance of {@link MAuthToken }
-     * 
-     */
-    public MAuthToken createMAuthToken() {
-        return new MAuthToken();
-    }
-
-    /**
      * Create an instance of {@link CreditCardProxyInput }
      * 
      */
     public CreditCardProxyInput createCreditCardProxyInput() {
         return new CreditCardProxyInput();
+    }
+
+    /**
+     * Create an instance of {@link MSaleOutput }
+     * 
+     */
+    public MSaleOutput createMSaleOutput() {
+        return new MSaleOutput();
     }
 
     /**
@@ -67,6 +59,14 @@ public class ObjectFactory {
      */
     public ArrayOfMSaleProduct createArrayOfMSaleProduct() {
         return new ArrayOfMSaleProduct();
+    }
+
+    /**
+     * Create an instance of {@link MAuthToken }
+     * 
+     */
+    public MAuthToken createMAuthToken() {
+        return new MAuthToken();
     }
 
     /**

@@ -74,6 +74,16 @@
                 </select>
             </div>
         </div>
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="">  Para Birimi: </label>
+            <div class="col-md-4">
+                <select name="currencyCode">
+                    <option value="TRY">TRY</option>
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                </select>
+            </div>
+        </div>
     </fieldset>
     <!-- Button -->
     <div class="form-group">
@@ -104,6 +114,7 @@
                 ccProxySaleRequest.ServiceType = "CCProxy";
                 ccProxySaleRequest.OperationType = "Sale";
                 ccProxySaleRequest.MPAY = "";
+                ccProxySaleRequest.CurrencyCode = request.getParameter("currencyCode");
                 ccProxySaleRequest.IPAddress = "127.0.0.8";
                 ccProxySaleRequest.PaymentContent = "BLGSYR01";
                 ccProxySaleRequest.Description = "Bilgisayar";
@@ -126,7 +137,7 @@
                 ccProxySaleRequest.CardTokenization.RequestType=0;
                 ccProxySaleRequest.CardTokenization.CustomerId="01";
                 ccProxySaleRequest.CardTokenization.ValidityPeriod=0;
-                ccProxySaleRequest.CardTokenization.CCTokenId=uuid.toString();
+                ccProxySaleRequest.CardTokenization.CCTokenId="";
 		
 		String ccProxySaleResponse = ccProxySaleRequest.execute(ccProxySaleRequest,settings); //"Ödeme Formu ödeme servisi baþlatýlmasý için gerekli servis çaðýrýsýný temsil eder."
 		StringWriter sw = new StringWriter();

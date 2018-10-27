@@ -25,6 +25,9 @@
                 <th>
                     Ýþlem Tutarý
                 </th>
+                 <th>
+                   Para birimi (CurrencyCode)
+                </th>
                 <th>
                     Ýþlem Tipi
                 </th>
@@ -40,6 +43,9 @@
                 </td>
                 <td>
                    0,01 TL
+                </td>
+                 <td>
+                    TRY/USD/EUR -->TRY
                 </td>
                 <td>
                   1 //Tek Çekim
@@ -80,6 +86,7 @@
                 wDTicketPaymentFormRequest.ServiceType = "WDTicket";
                 wDTicketPaymentFormRequest.OperationType = "Sale3DSURLProxy";
                 wDTicketPaymentFormRequest.MPAY = "";
+                wDTicketPaymentFormRequest.CurrencyCode = "TRY";
                 wDTicketPaymentFormRequest.Price=1;
                 wDTicketPaymentFormRequest.ErrorURL="http://localhost:8084/wirecard-java/fail.htm";
                 wDTicketPaymentFormRequest.SuccessURL="http://localhost:8084/wirecard-java/success.htm";

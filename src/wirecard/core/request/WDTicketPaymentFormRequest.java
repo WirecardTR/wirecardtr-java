@@ -28,6 +28,8 @@ public class WDTicketPaymentFormRequest {
         public int Price;
         @XmlElement(name ="MPAY")
         public String MPAY;
+        @XmlElement(name ="CurrencyCode")
+        public String CurrencyCode ;
         @XmlElement(name ="Description")
         public String Description;
         @XmlElement(name ="ErrorURL")

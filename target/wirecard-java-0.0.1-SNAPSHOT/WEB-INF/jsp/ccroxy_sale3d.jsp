@@ -74,6 +74,16 @@
                 </select>
             </div>
         </div>
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="">  Para Birimi: </label>
+            <div class="col-md-4">
+                <select name="currencyCode">
+                    <option value="TRY">TRY</option>
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                </select>
+            </div>
+        </div>
     </fieldset>
     <!-- Button -->
     <div class="form-group">
@@ -95,8 +105,8 @@
 		*/
                 UUID  uuid = UUID.randomUUID();
 		Settings settings = new Settings();    
-		settings.userCode="20923";
-                settings.pin="535D7D1B5DA6407EB7F6";
+		settings.userCode="";
+                settings.pin="";
 		settings.baseUrl = "https://www.wirecard.com.tr/SGate/Gate"; //"Wirecard web servisleri API url'lerinin bilgisidir. 
 
                 
@@ -104,6 +114,7 @@
                 ccProxySale3dRequest.ServiceType = "CCProxy";
                 ccProxySale3dRequest.OperationType = "Sale3DSEC";
                 ccProxySale3dRequest.MPAY = "";
+                ccProxySale3dRequest.CurrencyCode = request.getParameter("currencyCode");
                 ccProxySale3dRequest.IPAddress = "127.0.0.8";
                 ccProxySale3dRequest.PaymentContent = "BLGSYR01";
                 ccProxySale3dRequest.Description = "Bilgisayar";

@@ -27,6 +27,8 @@ public class CCProxySaleRequest {
         public CardTokenization CardTokenization ;
         @XmlElement(name ="MPAY") 
         public String MPAY ;
+        @XmlElement(name ="CurrencyCode")
+        public String CurrencyCode ;
         @XmlElement(name ="Port")
         public String Port ;
         @XmlElement(name ="IPAddress")

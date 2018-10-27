@@ -76,6 +76,16 @@
                 </select>
             </div>
         </div>
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="">  Para Birimi: </label>
+            <div class="col-md-4">
+                <select name="currencyCode">
+                    <option value="TRY">TRY</option>
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                </select>
+            </div>
+        </div>
     </fieldset>
     <!-- Button -->
     <div class="form-group">
@@ -97,14 +107,15 @@
                 
                 UUID  uuid = UUID.randomUUID();
 		Settings settings = new Settings();
-		settings.userCode="";
-                settings.pin="";
+		settings.userCode="20923";
+                settings.pin="535D7D1B5DA6407EB7F6";
 		settings.baseUrl = "https://www.wirecard.com.tr/SGate/Gate"; //"Wirecard web servisleri API url'lerinin bilgisidir. 
 		
 		MarketPlaceMpSaleRequest marketPlaceMpSaleRequest = new MarketPlaceMpSaleRequest();
                 marketPlaceMpSaleRequest.ServiceType = "CCMarketPlace";
                 marketPlaceMpSaleRequest.OperationType = "MPSale";
                 marketPlaceMpSaleRequest.MPAY = "01";
+                marketPlaceMpSaleRequest.CurrencyCode =request.getParameter("currencyCode");
                 marketPlaceMpSaleRequest.IPAddress = "127.0.0.1";
                 marketPlaceMpSaleRequest.Port = "123";
                 marketPlaceMpSaleRequest.Description = "Bilgisayar";
@@ -130,7 +141,7 @@
                 marketPlaceMpSaleRequest.CardTokenization.RequestType=0;
                 marketPlaceMpSaleRequest.CardTokenization.CustomerId="01";
                 marketPlaceMpSaleRequest.CardTokenization.ValidityPeriod=0;
-                marketPlaceMpSaleRequest.CardTokenization.CCTokenId=uuid.toString();
+                marketPlaceMpSaleRequest.CardTokenization.CCTokenId="";
                 
                
                 

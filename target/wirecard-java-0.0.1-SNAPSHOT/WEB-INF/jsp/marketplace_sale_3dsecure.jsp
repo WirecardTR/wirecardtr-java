@@ -75,6 +75,16 @@
                 </select>
             </div>
         </div>
+         <div class="form-group">
+            <label class="col-md-4 control-label" for="">  Para Birimi: </label>
+            <div class="col-md-4">
+                <select name="currencyCode">
+                    <option value="TRY">TRY</option>
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                </select>
+            </div>
+        </div>
     </fieldset>
     <!-- Button -->
     <div class="form-group">
@@ -97,8 +107,8 @@
                 UUID  uuid = UUID.randomUUID();
 		Settings settings = new Settings();
                 
-		settings.userCode="";
-                settings.pin="";
+		settings.userCode="20923";
+                settings.pin="535D7D1B5DA6407EB7F6";
 		settings.baseUrl = "https://www.wirecard.com.tr/SGate/Gate"; //"Wirecard web servisleri API url'lerinin bilgisidir. 
    
 		MarketPlaceSale3DSecRequest marketPlaceSale3DSecRequest = new MarketPlaceSale3DSecRequest();  
@@ -106,6 +116,7 @@
                 marketPlaceSale3DSecRequest.ServiceType = "CCMarketPlace";
                 marketPlaceSale3DSecRequest.OperationType = "Sale3DSEC";
                 marketPlaceSale3DSecRequest.MPAY = "";
+                marketPlaceSale3DSecRequest.CurrencyCode =request.getParameter("currencyCode");
                 marketPlaceSale3DSecRequest.IPAddress = "127.0.0.";
                 marketPlaceSale3DSecRequest.Port = "123";
                 marketPlaceSale3DSecRequest.Description = "Bilgisayar";
@@ -114,7 +125,7 @@
                 marketPlaceSale3DSecRequest.ExtraParam = "";
                 marketPlaceSale3DSecRequest.PaymentContent = "BLGSYR01";
                 marketPlaceSale3DSecRequest.SubPartnerId =Integer.parseInt(request.getParameter("subPartnerId"));
-                marketPlaceSale3DSecRequest.ErrorURL = "http://localhost:8084/wirecard-java/error.htm";
+                marketPlaceSale3DSecRequest.ErrorURL = "http://localhost:8084/wirecard-java/fail.htm";
                 marketPlaceSale3DSecRequest.SuccessURL = "http://localhost:8084/wirecard-java/success.htm";
                 
                 marketPlaceSale3DSecRequest.Token = new Token();
@@ -133,7 +144,7 @@
                 marketPlaceSale3DSecRequest.CardTokenization.RequestType=0;
                 marketPlaceSale3DSecRequest.CardTokenization.CustomerId="01";
                 marketPlaceSale3DSecRequest.CardTokenization.ValidityPeriod=0;
-                marketPlaceSale3DSecRequest.CardTokenization.CCTokenId=uuid.toString();
+                marketPlaceSale3DSecRequest.CardTokenization.CCTokenId="";
                 
                 
 		String marketPlaceSale3DSecResponse = marketPlaceSale3DSecRequest.execute(marketPlaceSale3DSecRequest,settings); //"Pazaryeri 3DSecure servisi baþlatýlmasý için gerekli servis çaðýrýsýný temsil eder."

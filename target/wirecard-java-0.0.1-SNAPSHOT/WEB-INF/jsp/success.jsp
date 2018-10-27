@@ -17,10 +17,10 @@
     <%
             
             Settings settings = new Settings();
-		settings.userCode="20923";
-                settings.pin="535D7D1B5DA6407EB7F6";
+		settings.userCode="";
+                settings.pin="";
 		settings.baseUrl = "https://www.wirecard.com.tr/SGate/Gate"; //"Wirecard web servisleri API url'lerinin bilgisidir. 
-                settings.hashKey="Ce1!Bc*405e3";
+                settings.hashKey="";
                 
                 
     	request.setCharacterEncoding("UTF-8");
@@ -48,6 +48,7 @@
                 
 		out.println("<pre>" + Helper.prettyPrintXml(sw.toString()) + "</pre>");
                 if( successOrFailResponse.result==successOrFailResponse.HashParam){
+                //Gelen Hash deðerinin doðru hesaplanmýþ olmasý iþlem güvenliði açýsýndan önemlidir !
                 
                 
                 }
