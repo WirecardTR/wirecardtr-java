@@ -1,9 +1,12 @@
 <%@page import="wirecard.core.entity.Token"%>
 <%@page import="wirecard.core.entity.ContactInfo"%>
 <%@page import="wirecard.core.entity.FinancialInfo"%>
+<%@page import="wirecard.core.entity.AuthSignatoryInfo"%>
 <%@page import="wirecard.core.Helper"%>
 <%@page import="javax.xml.bind.JAXB"%>
 <%@page import="java.io.StringWriter"%>
+<%@page import="java.text.SimpleDateFormat"%>
+<%@page import="java.util.Date"%> 
 <%@page import="wirecard.core.request.MarketPlaceAddSubMerchantRequest"%>
 <%@page import="wirecard.core.Settings"%>
 <%@page import="java.util.UUID"%>
@@ -28,6 +31,9 @@
     <label style="font-weight:bold;">Maðaza Ülkesi&nbsp;:&nbsp;</label>TR<br>
     <label style="font-weight:bold;">Maðaza Þehri &nbsp;</label>&nbsp; 34<br>
     <label style="font-weight:bold;">Maðaza Açýk Adresi</label>Gayrettepe Mh. Yýldýz Posta Cd. D Plaza No:52 K:6 34349 Beþiktaþ / Ýstanbul<br>
+    <label style="font-weight:bold;">Ýmza Yetkilisi Adý &nbsp;: &nbsp; </label>Ahmet<br>
+    <label style="font-weight:bold;">Ýmza Yetkilisi Soyadý &nbsp;: &nbsp;</label>Yýlmaz<br>
+    <label style="font-weight:bold;">Ýmza Yetkilisi Doðum Tarihi &nbsp;: &nbsp;</label>1970/10/29<br>
     
 </fieldset>
 
@@ -102,6 +108,9 @@
 		   Setting ayarlarýmýzý alýyoruz. Formdan gelen bilgilerle MarketPlaceAddSubMerchantRequest sýnýfýmýzý dolduruyoruz.
 		   MarketPlaceAddSubMerchantRequest ve Setting ayarlarýmýzla sayfamýzý post ediyoruz.
 		*/
+                Date myDate = new Date();
+                String date=new SimpleDateFormat("yyyy-MM-dd").format(myDate);
+                
 		Settings settings = new Settings();
 		settings.userCode="";
                 settings.pin="";
@@ -141,7 +150,16 @@
                 marketPlaceAddSubMerchantRequest.FinancialInfo.BankName = "0012";
                 marketPlaceAddSubMerchantRequest.FinancialInfo.IBAN = "TR330006100519786457841326";
                 
-		String marketPlaceAddSubMerchantResponse = marketPlaceAddSubMerchantRequest.execute(marketPlaceAddSubMerchantRequest,settings); //"Pazaryeri Oluþturma servisi baþlatýlmasý için gerekli servis çaðýrýsýný temsil eder."
+                marketPlaceAddSubMerchantRequest.AuthSignatoryInfo = new AuthSignatoryInfo();
+                marketPlaceAddSubMerchantRequest.AuthSignatoryInfo.Name = "Ahmet";
+                marketPlaceAddSubMerchantRequest.AuthSignatoryInfo.Surname = "Yaþar";
+                marketPlaceAddSubMerchantRequest.AuthSignatoryInfo.BirthDate = date;
+
+                
+
+                
+                
+                String marketPlaceAddSubMerchantResponse = marketPlaceAddSubMerchantRequest.execute(marketPlaceAddSubMerchantRequest,settings); //"Pazaryeri Oluþturma servisi baþlatýlmasý için gerekli servis çaðýrýsýný temsil eder."
 		StringWriter sw = new StringWriter();
                 JAXB.marshal(marketPlaceAddSubMerchantResponse, sw);
 		out.println("<pre>" + Helper.prettyPrintXml(sw.toString()) + "</pre>"); //"Pazaryeri  Oluþturma servis çaðrýsý sonucunda oluþan servis çýktý parametrelerinin ekranda gösterilmesini saðlar"

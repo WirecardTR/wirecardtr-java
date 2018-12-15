@@ -107,8 +107,8 @@
                 UUID  uuid = UUID.randomUUID();
 		Settings settings = new Settings();
                 
-		settings.userCode="20923";
-                settings.pin="535D7D1B5DA6407EB7F6";
+		settings.userCode="";
+                settings.pin="";
 		settings.baseUrl = "https://www.wirecard.com.tr/SGate/Gate"; //"Wirecard web servisleri API url'lerinin bilgisidir. 
    
 		MarketPlaceSale3DSecRequest marketPlaceSale3DSecRequest = new MarketPlaceSale3DSecRequest();  

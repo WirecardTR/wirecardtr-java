@@ -6,6 +6,10 @@
 <%@page import="java.io.StringWriter"%>
 <%@page import="wirecard.core.request.MarketPlaceUpdateSubMerchantRequest"%>
 <%@page import="wirecard.core.Settings"%>
+<%@page import="java.text.SimpleDateFormat"%>
+<%@page import="java.util.Date"%> 
+<%@page import="wirecard.core.entity.AuthSignatoryInfo"%>
+
 <jsp:include page="layout.jsp" />
 <%@page contentType="text/html" pageEncoding="windows-1254"%>
 <!DOCTYPE html>
@@ -29,6 +33,9 @@
     <label style="font-weight:bold;">Maðaza Ülkesi: &nbsp; : &nbsp;</label>TR<br>
     <label style="font-weight:bold;">Maðaza Þehri: &nbsp;</label>&nbsp; 34<br>
     <label style="font-weight:bold;">Maðaza Açýk Adresi &nbsp;: &nbsp;</label>Gayrettepe Mh. Yýldýz Posta Cd. D Plaza No:52 K:6 34349 Beþiktaþ / Ýstanbul<br>
+    <label style="font-weight:bold;">Ýmza Yetkilisi Adý &nbsp;: &nbsp; </label>Ahmet<br>
+    <label style="font-weight:bold;">Ýmza Yetkilisi Soyadý &nbsp;: &nbsp;</label>Yýlmaz<br>
+    <label style="font-weight:bold;">Ýmza Yetkilisi Doðum Tarihi &nbsp;: &nbsp;</label>1970/10/29<br>
 </fieldset>
 
 <br />
@@ -110,6 +117,9 @@
 		   Setting ayarlarýmýzý alýyoruz. Formdan gelen bilgilerle MarketPlaceUpdateSubMerchantRequest sýnýfýmýzý dolduruyoruz.
 		   MarketPlaceUpdateSubMerchantRequest ve Setting ayarlarýmýzla sayfamýzý post ediyoruz.
 		*/
+                Date myDate = new Date();
+                String date=new SimpleDateFormat("yyyy-MM-dd").format(myDate);
+                
 		Settings settings = new Settings();
 		settings.userCode="";
                 settings.pin="";
@@ -148,6 +158,11 @@
                 marketPlaceUpdateSubMerchantRequest.FinancialInfo.TaxNumber = "11111111111";
                 marketPlaceUpdateSubMerchantRequest.FinancialInfo.BankName = "0012";
                 marketPlaceUpdateSubMerchantRequest.FinancialInfo.IBAN = "TR330006100519786457841326";
+                
+                marketPlaceUpdateSubMerchantRequest.AuthSignatoryInfo = new AuthSignatoryInfo();
+                marketPlaceUpdateSubMerchantRequest.AuthSignatoryInfo.Name = "Ahmet";
+                marketPlaceUpdateSubMerchantRequest.AuthSignatoryInfo.Surname = "Yaþar";
+                marketPlaceUpdateSubMerchantRequest.AuthSignatoryInfo.BirthDate = date;
                 
 		String marketPlaceUpdateSubMerchantResponse = marketPlaceUpdateSubMerchantRequest.execute(marketPlaceUpdateSubMerchantRequest,settings); //"Pazaryeri Oluþturma servisi baþlatýlmasý için gerekli servis çaðýrýsýný temsil eder."
 		StringWriter sw = new StringWriter();

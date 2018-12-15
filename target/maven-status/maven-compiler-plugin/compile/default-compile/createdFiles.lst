@@ -56,7 +56,6 @@ com\mikro_odeme\services\MSendSMSInput.class
 wirecard\core\Constants.class
 com\_3pay\services\UpdateSubscriberPriceByIdandDateResponse.class
 com\_3pay\services\GetSaleResult.class
-wirecard\core\request\MarketPlaceAddSubMerchantRequest.class
 com\mikro_odeme\services\MSendSMSServiceSoap.class
 com\_3pay\services\CancelTicketResponse.class
 com\_3pay\services\SaleServiceHttpPost.class
