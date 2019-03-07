@@ -77,8 +77,10 @@
                  <li>
                     <a href="#marketPlace" data-toggle="collapse" aria-expanded="false">Mağaza Servisleri</a>
                     <ul class="collapse list-unstyled" id="marketPlace">
-                      <li><a href="marketplace_add_subpartner.htm">Mağaza Oluştur</a></li>
-                      <li><a href="marketplace_update_subpartner.htm">Mağaza Güncelle</a></li>
+                      <li><a href="marketplace_add_subpartner.htm">Mağaza Oluştur (Belge İle Doğrulama)</a></li>
+                      <li><a href="marketplace_update_subpartner.htm">Mağaza Güncelle (Belge İle Doğrulama)</a></li>
+                      <li><a href="marketplace_add_subpartner_online_verify.htm">Mağaza Oluştur (Online Doğrulama)</a></li>
+                      <li><a href="marketplace_update_subpartner_online_verify.htm">Mağaza Güncelle (Online Doğrulama)</a></li>
                       <li><a href="marketplace_deactive_subpartner.htm">Mağaza Sil</a></li>
                       <li><a href="marketplace_sale_3dsecure.htm">3D Secure ile Ödeme</a></li>
                       <li><a href="marketplace_mpsale.htm">3D Secure Olmadan Ödeme</a></li>

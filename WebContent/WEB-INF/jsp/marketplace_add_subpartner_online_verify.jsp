@@ -12,7 +12,7 @@
 <%@page import="java.util.UUID"%>
 <jsp:include page="layout.jsp" />
 <%@page contentType="text/html" pageEncoding="windows-1254"%>
-<h2>Pazaryeri Oluþturma (Belge Ýle Doðrulama)</h2>
+<h2>Pazaryeri Oluþturma (Online Doðrulama)</h2>
 
 
 <fieldset>
@@ -149,6 +149,9 @@
                 marketPlaceAddSubMerchantRequest.FinancialInfo.TaxNumber = "11111111111";
                 marketPlaceAddSubMerchantRequest.FinancialInfo.BankName = "0012";
                 marketPlaceAddSubMerchantRequest.FinancialInfo.IBAN = "TR330006100519786457841326";
+                marketPlaceAddSubMerchantRequest.FinancialInfo.TradeRegisterNumber = "963018";
+                marketPlaceAddSubMerchantRequest.FinancialInfo.TradeChamber = "ÝTO";
+
                 
                 marketPlaceAddSubMerchantRequest.AuthSignatoryInfo = new AuthSignatoryInfo();
                 marketPlaceAddSubMerchantRequest.AuthSignatoryInfo.Name = "Ahmet";

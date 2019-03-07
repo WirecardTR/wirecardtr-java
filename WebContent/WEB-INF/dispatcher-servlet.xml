@@ -48,6 +48,8 @@
                                 <prop key="tokenizecc.htm">TokenizeCCController</prop>
                                 <prop key="tokenizesuccess.htm">TokenizeSuccessController</prop>
                                 <prop key="tokenizeerror.htm">TokenizeErrorController</prop>
+                                <prop key="marketplace_add_subpartner_online_verify.htm">MarketPlaceAddSubPartnerOnlineController</prop>
+                                <prop key="marketplace_update_subpartner_online_verify.htm">MarketPlaceUpdateSubPartnerOnlineController</prop>
                                 
 			</props>
 		</property>
@@ -174,7 +176,14 @@
 		class="org.springframework.web.servlet.mvc.ParameterizableViewController"
 		p:viewName="tokenizecc" /> 
           
-         
+         <bean
+		name="MarketPlaceUpdateSubPartnerOnlineController"
+		class="org.springframework.web.servlet.mvc.ParameterizableViewController"
+		p:viewName="marketplace_update_subpartner_online_verify" />
+        <bean
+		name="MarketPlaceAddSubPartnerOnlineController"
+		class="org.springframework.web.servlet.mvc.ParameterizableViewController"
+		p:viewName="marketplace_add_subpartner_online_verify" />
          
          
 </beans>

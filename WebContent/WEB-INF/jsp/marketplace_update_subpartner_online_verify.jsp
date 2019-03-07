@@ -14,7 +14,7 @@
 <%@page contentType="text/html" pageEncoding="windows-1254"%>
 <!DOCTYPE html>
 
-<h2>Pazaryeri Güncelleme (Belge Ýle Doðrulama)</h2>
+<h2>Pazaryeri Güncelleme (Online Doðrulama)</h2>
 
 
 <fieldset>
@@ -158,6 +158,8 @@
                 marketPlaceUpdateSubMerchantRequest.FinancialInfo.TaxNumber = "11111111111";
                 marketPlaceUpdateSubMerchantRequest.FinancialInfo.BankName = "0012";
                 marketPlaceUpdateSubMerchantRequest.FinancialInfo.IBAN = "TR330006100519786457841326";
+                marketPlaceUpdateSubMerchantRequest.FinancialInfo.TradeRegisterNumber = "963018";
+                marketPlaceUpdateSubMerchantRequest.FinancialInfo.TradeChamber = "ÝTO";
                 
                 marketPlaceUpdateSubMerchantRequest.AuthSignatoryInfo = new AuthSignatoryInfo();
                 marketPlaceUpdateSubMerchantRequest.AuthSignatoryInfo.Name = "Ahmet";

@@ -19,5 +19,6 @@ Any value defined here will override the pom.xml file value but is only applicab
         <org-netbeans-modules-maven-jaxws._5f_C_5f_saleservice_2e_asmx>https://www.3pay.com/services/saleservice.asmx?WSDL</org-netbeans-modules-maven-jaxws._5f_C_5f_saleservice_2e_asmx>
         <org-netbeans-modules-maven-jaxws._5f_C_5f_saleservice_2e_asmx_5f_1>https://www.wirecard.com.tr/services/saleservice.asmx?WSDL</org-netbeans-modules-maven-jaxws._5f_C_5f_saleservice_2e_asmx_5f_1>
         <org-netbeans-modules-maven-jaxws._5f_C_5f_saleservice_2e_asmx_5f_2>https://www.wirecard.com.tr/services/saleservice.asmx?WSDL</org-netbeans-modules-maven-jaxws._5f_C_5f_saleservice_2e_asmx_5f_2>
+        <org-netbeans-modules-maven-j2ee.netbeans_2e_hint_2e_deploy_2e_server>Tomcat</org-netbeans-modules-maven-j2ee.netbeans_2e_hint_2e_deploy_2e_server>
     </properties>
 </project-shared-configuration>

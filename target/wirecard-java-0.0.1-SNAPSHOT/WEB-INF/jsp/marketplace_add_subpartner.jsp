@@ -12,7 +12,7 @@
 <%@page import="java.util.UUID"%>
 <jsp:include page="layout.jsp" />
 <%@page contentType="text/html" pageEncoding="windows-1254"%>
-<h2>Pazaryeri Oluþturma</h2>
+<h2>Pazaryeri Oluþturma (Belge Ýle Doðrulama)</h2>
 
 
 <fieldset>

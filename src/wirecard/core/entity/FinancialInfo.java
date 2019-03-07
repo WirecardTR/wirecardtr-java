@@ -18,4 +18,8 @@ public class FinancialInfo {
         public String BankName ;
         @XmlElement(name ="IBAN")
         public String IBAN ;
+        @XmlElement(name ="TradeRegisterNumber")
+        public String TradeRegisterNumber ;
+        @XmlElement(name ="TradeChamber")
+        public String TradeChamber ;
 }

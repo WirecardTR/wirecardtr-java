@@ -14,7 +14,7 @@
 <%@page contentType="text/html" pageEncoding="windows-1254"%>
 <!DOCTYPE html>
 
-<h2>Pazaryeri Güncelleme</h2>
+<h2>Pazaryeri Güncelleme (Belge Ýle Doðrulama)</h2>
 
 
 <fieldset>
