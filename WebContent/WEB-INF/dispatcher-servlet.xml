@@ -50,7 +50,7 @@
                                 <prop key="tokenizeerror.htm">TokenizeErrorController</prop>
                                 <prop key="marketplace_add_subpartner_online_verify.htm">MarketPlaceAddSubPartnerOnlineController</prop>
                                 <prop key="marketplace_update_subpartner_online_verify.htm">MarketPlaceUpdateSubPartnerOnlineController</prop>
-                                
+                                <prop key="bin_query.htm">BinQueryController</prop>
 			</props>
 		</property>
 	</bean>
@@ -184,6 +184,10 @@
 		name="MarketPlaceAddSubPartnerOnlineController"
 		class="org.springframework.web.servlet.mvc.ParameterizableViewController"
 		p:viewName="marketplace_add_subpartner_online_verify" />
+        <bean
+		name="BinQueryController"
+		class="org.springframework.web.servlet.mvc.ParameterizableViewController"
+		p:viewName="bin_query" />
          
          
 </beans>

@@ -14,6 +14,7 @@ com\_3pay\services\MSaleResult.class
 com\mikro_odeme\services\ArrayOfMMicroPaymentOutput.class
 wirecard\core\request\MarketplaceReleasePaymentRequest.class
 com\_3pay\services\MSubscriber.class
+wirecard\core\request\BinQueryRequest.class
 com\_3pay\services\GetBokuPricePoints.class
 com\_3pay\services\GetBokuPricePointsResponse.class
 com\_3pay\services\UpdateSubscriberPriceByIdandDate.class

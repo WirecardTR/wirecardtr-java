@@ -101,7 +101,8 @@
                     <ul class="collapse list-unstyled" id="transactionQueryForm">
                       <li><a href="transactionquery_order.htm">Sipariş Numarası ile İşlem Sorgulama</a></li>
                        <li><a href="transactionquery_mpay.htm">MPAY ile İşlem Sorgulama</a></li>
-                       
+                       <li><a href="bin_query.htm">BIN Sorgulama</a></li>
+
                     </ul>
                 </li>
             </ul>  
