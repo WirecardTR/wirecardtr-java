@@ -51,6 +51,8 @@
                                 <prop key="marketplace_add_subpartner_online_verify.htm">MarketPlaceAddSubPartnerOnlineController</prop>
                                 <prop key="marketplace_update_subpartner_online_verify.htm">MarketPlaceUpdateSubPartnerOnlineController</prop>
                                 <prop key="bin_query.htm">BinQueryController</prop>
+                                <prop key="marketplace_create_subpartner.htm">CreateSubPartnerController</prop>
+
 			</props>
 		</property>
 	</bean>
@@ -188,6 +190,10 @@
 		name="BinQueryController"
 		class="org.springframework.web.servlet.mvc.ParameterizableViewController"
 		p:viewName="bin_query" />
+        <bean
+		name="CreateSubPartnerController"
+		class="org.springframework.web.servlet.mvc.ParameterizableViewController"
+		p:viewName="marketplace_create_subpartner" />
          
          
 </beans>

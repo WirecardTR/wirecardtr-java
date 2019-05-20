@@ -34,6 +34,7 @@ com\_3pay\services\StartSubscriptionWithTokenResponse.class
 com\_3pay\services\SubscriberManagementServiceSoap.class
 com\_3pay\services\QueryResultItem.class
 com\mikro_odeme\services\MSendSMSOutput.class
+wirecard\core\request\MarketPlaceCreateSubMerchantRequest.class
 com\_3pay\services\GetSaleResult2Response.class
 wirecard\core\request\SubScriberChangePriceRequest.class
 wirecard\core\request\TokenizeCCURLRequest.class

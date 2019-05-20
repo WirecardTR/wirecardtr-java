@@ -119,6 +119,7 @@ D:\Projects\WirecardDeveloperPortalPlugins\java\wirecardtr-java\target\generated
 D:\Projects\WirecardDeveloperPortalPlugins\java\wirecardtr-java\src\wirecard\core\request\TokenizeCCRequest.java
 D:\Projects\WirecardDeveloperPortalPlugins\java\wirecardtr-java\src\wirecard\core\request\MarketplaceReleasePaymentRequest.java
 D:\Projects\WirecardDeveloperPortalPlugins\java\wirecardtr-java\target\generated-sources\jaxws-wsimport\com\_3pay\services\SaleService.java
+D:\Projects\WirecardDeveloperPortalPlugins\java\wirecardtr-java\src\wirecard\core\request\MarketPlaceCreateSubMerchantRequest.java
 D:\Projects\WirecardDeveloperPortalPlugins\java\wirecardtr-java\src\wirecard\core\entity\Token.java
 D:\Projects\WirecardDeveloperPortalPlugins\java\wirecardtr-java\target\generated-sources\jaxws-wsimport\com\_3pay\services\SaleWithoutConfirmResponse.java
 D:\Projects\WirecardDeveloperPortalPlugins\java\wirecardtr-java\src\wirecard\core\request\MarketPlaceMpSaleRequest.java

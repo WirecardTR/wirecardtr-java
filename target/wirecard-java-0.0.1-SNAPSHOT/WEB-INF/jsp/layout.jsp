@@ -79,6 +79,7 @@
                     <ul class="collapse list-unstyled" id="marketPlace">
                       <li><a href="marketplace_add_subpartner.htm">Mağaza Oluştur (Belge İle Doğrulama)</a></li>
                       <li><a href="marketplace_update_subpartner.htm">Mağaza Güncelle (Belge İle Doğrulama)</a></li>
+                      <li><a href="marketplace_create_subpartner.htm">Mağaza Yarat</a></li>
                       <li><a href="marketplace_add_subpartner_online_verify.htm">Mağaza Oluştur (Online Doğrulama)</a></li>
                       <li><a href="marketplace_update_subpartner_online_verify.htm">Mağaza Güncelle (Online Doğrulama)</a></li>
                       <li><a href="marketplace_deactive_subpartner.htm">Mağaza Sil</a></li>
