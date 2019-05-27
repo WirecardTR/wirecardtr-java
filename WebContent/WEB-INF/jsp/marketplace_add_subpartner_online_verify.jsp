@@ -127,6 +127,9 @@
                 marketPlaceAddSubMerchantRequest.Name=request.getParameter("name");
                 marketPlaceAddSubMerchantRequest.BranchName=request.getParameter("name");
                 
+                marketPlaceAddSubMerchantRequest.SuccessURL="https://www.test.com/Success";
+                marketPlaceAddSubMerchantRequest.ErrorURL="https://www.test.com/Error";
+                
                 
                 marketPlaceAddSubMerchantRequest.Token= new Token();
                 marketPlaceAddSubMerchantRequest.Token.Pin=settings.pin;
