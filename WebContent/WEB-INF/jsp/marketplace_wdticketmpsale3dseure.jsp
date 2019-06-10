@@ -89,6 +89,12 @@
                 marketPlaceSale3DSecRequest.Token.UserCode = settings.userCode;
                 marketPlaceSale3DSecRequest.Token.Pin = settings.pin;
                 
+                marketPlaceSale3DSecRequest.CustomerInfo = new CustomerInfo();
+                marketPlaceSale3DSecRequest.CustomerInfo.CustomerName = "ahmet";
+                marketPlaceSale3DSecRequest.CustomerInfo.CustomerSurname = "yýlmaz";
+                marketPlaceSale3DSecRequest.CustomerInfo.CustomerEmail = "ahmet.yilmaz@gmail.com";
+                marketPlaceSale3DSecRequest.Language = "TR";
+                
                 String marketPlaceSale3DSecResponse = marketPlaceSale3DSecRequest.execute(marketPlaceSale3DSecRequest,settings); //"Pazaryeri 3DSecure servisi baþlatýlmasý için gerekli servis çaðýrýsýný temsil eder."
 		StringWriter sw = new StringWriter();
                 JAXB.marshal(marketPlaceSale3DSecResponse, sw);

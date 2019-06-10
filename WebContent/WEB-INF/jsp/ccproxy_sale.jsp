@@ -139,6 +139,15 @@
                 ccProxySaleRequest.CardTokenization.ValidityPeriod=0;
                 ccProxySaleRequest.CardTokenization.CCTokenId="";
 		
+
+                ccProxySaleRequest.CustomerInfo = new CustomerInfo();
+                ccProxySaleRequest.CustomerInfo.CustomerName = "ahmet";
+                ccProxySaleRequest.CustomerInfo.CustomerSurname = "yýlmaz";
+                ccProxySaleRequest.CustomerInfo.CustomerEmail = "ahmet.yilmaz@gmail.com";
+
+
+                ccProxySaleRequest.Language = "TR";
+                
 		String ccProxySaleResponse = ccProxySaleRequest.execute(ccProxySaleRequest,settings); //"Ödeme Formu ödeme servisi baþlatýlmasý için gerekli servis çaðýrýsýný temsil eder."
 		StringWriter sw = new StringWriter();
                 JAXB.marshal(ccProxySaleResponse, sw);
