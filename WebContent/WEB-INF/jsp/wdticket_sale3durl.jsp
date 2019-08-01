@@ -94,7 +94,8 @@
                 wDTicketPaymentFormRequest.PaymentContent="Bilgisayar";
                 wDTicketPaymentFormRequest.Description="BLGSYR01";
                 wDTicketPaymentFormRequest.PaymentTypeId=1;
-                
+                wDTicketPaymentFormRequest.InstallmentOptions=0;
+
                 wDTicketPaymentFormRequest.Token = new Token();
                 wDTicketPaymentFormRequest.Token.UserCode = settings.userCode;
                 wDTicketPaymentFormRequest.Token.Pin = settings.pin;

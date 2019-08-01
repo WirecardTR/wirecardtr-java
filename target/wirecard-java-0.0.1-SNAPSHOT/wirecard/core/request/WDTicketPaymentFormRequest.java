@@ -47,7 +47,8 @@ public class WDTicketPaymentFormRequest {
         public CustomerInfo CustomerInfo ;
         @XmlElement(name ="Language")
         public String Language ;
-        
+        @XmlElement(name ="InstallmentOptions")
+        public int InstallmentOptions;
          public static String execute(WDTicketPaymentFormRequest request, Settings settings) throws Exception {         
 		return RestHttpCaller.getInstance().postXML(settings.baseUrl,request);
 	}
