@@ -135,6 +135,14 @@
                 ccProxySale3dRequest.CreditCardInfo.Cvv =request.getParameter("cvv");
                 ccProxySale3dRequest.CreditCardInfo.Price = 1;//0,01 TL
                 
+                ccProxySale3dRequest.CustomerInfo = new CustomerInfo();
+                ccProxySale3dRequest.CustomerInfo.CustomerName = "ahmet";
+                ccProxySale3dRequest.CustomerInfo.CustomerSurname = "yýlmaz";
+                ccProxySale3dRequest.CustomerInfo.CustomerEmail = "ahmet.yilmaz@gmail.com";
+
+
+                ccProxySale3dRequest.Language = "TR";
+                
                 ccProxySale3dRequest.CardTokenization = new CardTokenization();
                 ccProxySale3dRequest.CardTokenization.RequestType=0;
                 ccProxySale3dRequest.CardTokenization.CustomerId="01";

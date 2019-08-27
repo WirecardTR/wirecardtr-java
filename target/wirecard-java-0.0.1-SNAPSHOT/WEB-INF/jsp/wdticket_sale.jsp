@@ -92,11 +92,18 @@
                 wDTicketPaymentFormRequest.PaymentContent="Bilgisayar";
                 wDTicketPaymentFormRequest.Description="BLGSYR01";
                 wDTicketPaymentFormRequest.PaymentTypeId=1;
-                
+                wDTicketPaymentFormRequest.InstallmentOptions=0;
+
                 wDTicketPaymentFormRequest.Token = new Token();
                 wDTicketPaymentFormRequest.Token.UserCode = settings.userCode;
                 wDTicketPaymentFormRequest.Token.Pin = settings.pin;
   
+                wDTicketPaymentFormRequest.CustomerInfo = new CustomerInfo();
+                wDTicketPaymentFormRequest.CustomerInfo.CustomerName = "ahmet";
+                wDTicketPaymentFormRequest.CustomerInfo.CustomerSurname = "yýlmaz";
+                wDTicketPaymentFormRequest.CustomerInfo.CustomerEmail = "ahmet.yilmaz@gmail.com";
+                wDTicketPaymentFormRequest.Language = "TR";
+                
 		String wDTicketPaymentFormResponse = wDTicketPaymentFormRequest.execute(wDTicketPaymentFormRequest,settings); //"WDTicket 3d Secure olmadan ödeme servis baþlatýlmasý için gerekli servis çaðýrýsýný temsil eder."
 		StringWriter sw = new StringWriter();
                 JAXB.marshal(wDTicketPaymentFormResponse, sw);

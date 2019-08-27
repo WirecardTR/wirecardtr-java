@@ -61,6 +61,7 @@ com\_3pay\services\GetSaleResult.class
 wirecard\core\request\MarketPlaceAddSubMerchantRequest.class
 com\mikro_odeme\services\MSendSMSServiceSoap.class
 com\_3pay\services\CancelTicketResponse.class
+wirecard\core\entity\CommissionRateList.class
 com\_3pay\services\SaleServiceHttpPost.class
 com\_3pay\services\SaleWithoutConfirmTestResponse.class
 com\_3pay\services\CreditCardProxy.class
@@ -102,6 +103,7 @@ com\_3pay\services\CancelTicket.class
 com\mikro_odeme\services\MMicroPaymentOutput.class
 com\_3pay\services\DeleteSubscriberResponse.class
 com\_3pay\services\ArrayOfMSaleProduct.class
+wirecard\core\entity\CustomerInfo.class
 com\_3pay\services\ArrayOfQueryResultItem.class
 com\_3pay\services\CheckTicketResponse.class
 wirecard\core\request\MarketPlaceSale3DSecRequest.class

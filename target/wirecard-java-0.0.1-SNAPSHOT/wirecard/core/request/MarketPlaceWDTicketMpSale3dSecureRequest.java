@@ -10,6 +10,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 import wirecard.core.RestHttpCaller;
 import wirecard.core.Settings;
 import wirecard.core.entity.CardTokenization;
+import wirecard.core.entity.CommissionRateList;
 import wirecard.core.entity.CreditCardInfo;
 import wirecard.core.entity.CustomerInfo;
 import wirecard.core.entity.Token;
@@ -17,7 +18,7 @@ import wirecard.core.entity.Token;
 
 @XmlRootElement(name = "WIRECARD")
 public class MarketPlaceWDTicketMpSale3dSecureRequest {
-    @XmlElement(name ="ServiceType")
+        @XmlElement(name ="ServiceType")
         public String ServiceType ;
         @XmlElement(name ="OperationType")
         public String OperationType ;
@@ -44,12 +45,16 @@ public class MarketPlaceWDTicketMpSale3dSecureRequest {
         public String ExtraParam ;
         @XmlElement(name ="PaymentContent")
         public String PaymentContent ;
-@XmlElement(name ="CustomerInfo")
+        @XmlElement(name ="CustomerInfo")
         public CustomerInfo CustomerInfo ;
         @XmlElement(name ="Language")
         public String Language ;
         @XmlElement(name ="SubPartnerId")
         public int SubPartnerId ;
+        @XmlElement(name ="InstallmentOptions")
+        public int InstallmentOptions ;
+        @XmlElement(name ="CommissionRateList")
+        public CommissionRateList CommissionRateList ;
         public static String execute(MarketPlaceWDTicketMpSale3dSecureRequest request, Settings settings) throws Exception {         
 		return RestHttpCaller.getInstance().postXML(settings.baseUrl,request);
 	}

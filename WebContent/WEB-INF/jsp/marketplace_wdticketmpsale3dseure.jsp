@@ -1,5 +1,8 @@
 <%@page import="wirecard.core.entity.Token"%>
 <%@page import="wirecard.core.entity.CreditCardInfo"%>
+<%@page import="wirecard.core.entity.CustomerInfo"%>
+<%@page import="wirecard.core.entity.CommissionRateList"%>
+
 <%@page import="wirecard.core.Helper"%>
 <%@page import="javax.xml.bind.JAXB"%>
 <%@page import="java.io.StringWriter"%>
@@ -20,6 +23,9 @@
     <label style="font-weight:bold;">Comission Rate &nbsp;:  &nbsp;</label>1 <br>
     <label style="font-weight:bold;">Açýklama &nbsp;:  &nbsp;</label>Ödeme iþleminin tanýmý <br>
     <label style="font-weight:bold;">Ekstra Parametre &nbsp;:  &nbsp;</label>Bu alanýn boþ olarak gönderilmesi gerekmektedir. <br>
+    <label style="font-weight:bold;">Comission Rate List &nbsp;:  &nbsp;</label>Inst0: <b>0</b>, Inst3: <b>110</b>, Inst6: <b>115</b>, Inst9: <b>120</b>, Inst12: <b>130</b><br>
+    <label style="font-weight:bold;">Installment Options &nbsp;:  &nbsp;</label> 3<br>
+
 </fieldset>
 
 <br />
@@ -66,8 +72,8 @@
                 UUID  uuid = UUID.randomUUID();
 		Settings settings = new Settings();
                 
-		settings.userCode="";
-                settings.pin="";
+		settings.userCode="20923";
+                settings.pin="535D7D1B5DA6407EB7F6";
 		settings.baseUrl = "https://www.wirecard.com.tr/SGate/Gate"; //"Wirecard web servisleri API url'lerinin bilgisidir. 
    
 		MarketPlaceWDTicketMpSale3dSecureRequest marketPlaceSale3DSecRequest = new MarketPlaceWDTicketMpSale3dSecureRequest();  
@@ -78,7 +84,8 @@
                 marketPlaceSale3DSecRequest.CurrencyCode =request.getParameter("currencyCode");
                 marketPlaceSale3DSecRequest.Description = "Bilgisayar";
                 marketPlaceSale3DSecRequest.CommissionRate = 100; //komisyon oraný 1. 100 ile çarpýlýp gönderiliyor
-                marketPlaceSale3DSecRequest.Price = 1; //komisyon oraný 1. 100 ile çarpýlýp gönderiliyor
+                marketPlaceSale3DSecRequest.Price = 1;
+                marketPlaceSale3DSecRequest.InstallmentOptions = 3; 
                 marketPlaceSale3DSecRequest.ExtraParam = "";
                 marketPlaceSale3DSecRequest.PaymentContent = "BLGSYR01";
                 marketPlaceSale3DSecRequest.SubPartnerId =Integer.parseInt(request.getParameter("subPartnerId"));
@@ -93,7 +100,16 @@
                 marketPlaceSale3DSecRequest.CustomerInfo.CustomerName = "ahmet";
                 marketPlaceSale3DSecRequest.CustomerInfo.CustomerSurname = "yýlmaz";
                 marketPlaceSale3DSecRequest.CustomerInfo.CustomerEmail = "ahmet.yilmaz@gmail.com";
+                
                 marketPlaceSale3DSecRequest.Language = "TR";
+                                
+                marketPlaceSale3DSecRequest.CommissionRateList = new CommissionRateList();
+                marketPlaceSale3DSecRequest.CommissionRateList.Inst0 = 0;
+                marketPlaceSale3DSecRequest.CommissionRateList.Inst3 = 110;
+                marketPlaceSale3DSecRequest.CommissionRateList.Inst6 = 115;
+                marketPlaceSale3DSecRequest.CommissionRateList.Inst9 = 120;
+                marketPlaceSale3DSecRequest.CommissionRateList.Inst12 = 130;
+                
                 
                 String marketPlaceSale3DSecResponse = marketPlaceSale3DSecRequest.execute(marketPlaceSale3DSecRequest,settings); //"Pazaryeri 3DSecure servisi baþlatýlmasý için gerekli servis çaðýrýsýný temsil eder."
 		StringWriter sw = new StringWriter();
